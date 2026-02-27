@@ -1,0 +1,57 @@
+# ==============================
+# OS Files
+# ==============================
+.DS_Store
+Thumbs.db
+
+# ==============================
+# IDE / Editor
+# ==============================
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+
+# ==============================
+# Logs
+# ==============================
+*.log
+
+# ==============================
+# Terraform (if you add later)
+# ==============================
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+
+# ==============================
+# Kubernetes Secrets (Important!)
+# ==============================
+*secret*.yaml
+secrets.yaml
+secret.yaml
+
+# If you store decoded secret values
+*.key
+*.pem
+*.crt
+
+# ==============================
+# Kubeconfig (NEVER PUSH THIS)
+# ==============================
+kubeconfig
+config
+.kube/
+
+# ==============================
+# Helm (if added later)
+# ==============================
+charts/*.tgz
+
+# ==============================
+# Environment Files
+# ==============================
+.env
+.env.*
