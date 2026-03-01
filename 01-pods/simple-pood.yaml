@@ -1,0 +1,25 @@
+#Simple pod example with a nginx container 
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-pod                 #pod ko name
+  namespace: default              # kubernetes namespace
+  labels:
+    app: nginx                   #App label
+    tier: frontend                #Tier label
+spec:
+  containers:
+  - name: nginx    #Container ko name
+    image: nginx:1.25  #container ko image tag sanga
+    ports:
+    - containerPort: 80     #container lai port 80 ma exposes gareko
+    resources:
+       requests:               #minimum katai chai resources dine
+         cpu: "100m"    #0.1 cup core
+         memory: "128Mi"  #128 Mebibytes memory
+       limits:     #maximum allowed resources
+         cpu: "200m"  #0.2 cpu core
+         memory: "256Mi"   #256 Mebibytes memory
+
+
+
