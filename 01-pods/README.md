@@ -91,5 +91,3 @@ debug-pod	Network troubleshooting, exec into pod
     resource-limits: CPU throttling observed (cpu.stat)
 
     debug-pod: Can run nslookup, wget inside
-
-
